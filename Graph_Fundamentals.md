@@ -23,8 +23,9 @@ Let $d(v)$ where:
 ### Degree-sum formula
 Let $G = (V, E)$
 - Graphs are usually denoted using only $V$ and $E$
-Let $|E|$ be the # of edges of graph $G$
-Then by the *degree-sum formula*, $2|E| = \sum_{v\inV}d(v)$
+
+Let $|E|$ be the # of edges of graph $G$<br>
+Then by the *degree-sum formula*, $2|E| = \sum_{v \in V}d(v)$
 - This can be easily determined because each edge has two vertices
 
 ## How are graphs traversed?
