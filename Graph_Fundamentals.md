@@ -61,6 +61,7 @@ Continuing from `trails`, a `path` is just a `trail` with `distinct` vectices. R
 
 ### In a nutshell
 ![graph traversal method circle](https://github.com/young170/Graph_Theory/blob/main/assets/images/graph_traversal_method_circle.png)
+
 This diagram shows the relationship between the 3 introduced methods.<br>
 $path \subset trail \subset walk$
 
