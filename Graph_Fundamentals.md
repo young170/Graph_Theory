@@ -41,15 +41,35 @@ We know the sum of the degrees of even vertices must be even, and $2|e|$ is even
 $\therefore \sum_{v \in V}d(v_o)$ is even.
 
 ## How are graphs traversed?
-There are many ways a graph can be traversed. The point to note while reading along is that all (most of them) of them are extensions of each other. Simply, the previous traverse method with an additional condition to make it a proper subset.
+There are many ways a graph can be traversed. The point to note while reading along is that all (most of them) of them are extensions of each other. Simply, the previous traversal method with an additional condition to make it a proper subset.
 
 ### Walk & closed-walk
+Imagine taking a walk in the park, if you were to draw a line on the ground while walking it would form a continous line.<br>
+Using this idea, a walk is:
+- A `sequence` of `adjacent` edges
+- Because every "walk" has a starting point and an end point, these points are called: `initial` & `terminal` points.<br>
+Now after your (hopefully) daily walk, you would normally check the distance you've covered (and either feel proud! or...). This is called the `length` of walk.<br>
+It is calculated just as your health app would, no limits and no removal of overlaps.<br>
+When your inital point and terminal points are the same it is termed a `closed` walk. Simple as that!
 
 ### Trail
+In the introduction of this chapter I meantioned each traversal method is just the extension of the one before.<br>
+A `trail` is just a `walk` with `distinct` edges.
 
 ### Path
+Continuing from `trails`, a `path` is just a `trail` with `distinct` vectices. Remember the difference between trails and paths (distinct edges vs vertices).
+
+### In a nutshell
+![graph traversal method circle](https://github.com/young170/Graph_Theory/main/assets/images/graph_traversal_method_circle.png)
+This diagram shows the relationship between the 3 introduced methods.<br>
+$path \subset trail \subset walk$
 
 ### Cycle
+Now this is where things start to get interesting.<br>
+
+```
+Notice cycles are not formally a subset of paths because by definition, paths must have distinct vertices.
+```
 
 ## Notations to remember
 
