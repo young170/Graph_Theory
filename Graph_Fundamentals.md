@@ -60,7 +60,7 @@ A `trail` is just a `walk` with `distinct` edges.
 Continuing from `trails`, a `path` is just a `trail` with `distinct` vectices. Remember the difference between trails and paths (distinct edges vs vertices).
 
 ### In a nutshell
-![graph traversal method circle](https://github.com/young170/Graph_Theory/main/assets/images/graph_traversal_method_circle.png)
+![graph traversal method circle](https://github.com/young170/Graph_Theory/blob/main/assets/images/graph_traversal_method_circle.png)
 This diagram shows the relationship between the 3 introduced methods.<br>
 $path \subset trail \subset walk$
 
