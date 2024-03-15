@@ -17,11 +17,7 @@ Let the length of $C$ be $n$.<br>
 Let $C = (v_1, v_2, ..., v_n, v_1)$.<br>
 $w.l.g.$ let $v_1 \in A$. It follows that $v_2 \in B$ and hence $v_3 \in A$, and so on.<br>
 Hence, we see that $\forall x \in {1, 2, ...n}$, we have:<br>
-$v_k=
-\begin{cases}
-A & k \text{is odd}\\
-B & k \text{is even}
-\end{cases}$
+$$ v_k= \begin{cases} A & k \text{is odd}\\ B & k \text{is even} \end{cases} $$
 By definition, $n$ is odd, $v_n \in A$.<br>
 But $v_1 \in A$, and $(v_n, v_1) \in C_n$.<br>
 So, $(v_n, v_1) \in E$ contradicts the assumption that $G$ is bipartite.<br>
