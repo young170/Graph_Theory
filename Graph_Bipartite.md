@@ -23,6 +23,9 @@ But $v_1 \in A$, and $(v_n, v_1) \in C_n$.<br>
 So, $(v_n, v_1) \in E$ contradicts the assumption that $G$ is bipartite.<br>
 $\therefore$ If $G$ is bipartite, then it has no odd cycles.
 
+Another approach at this proof could count that the length of a cycle in a bipartite graph, $C_n$ is always $2n + 2$.<br>
+Using this one could prove only even cycles can exist in a bipartite graph.
+
 ## If a Graph Has no Odd Cycles $\Rightarrow$ It is a Bipartite Graph
 
 
