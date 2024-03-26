@@ -61,13 +61,13 @@ Let $v_0$ be the vertex that has the min-degree of $\delta$, meaning it has at l
 
 At least one of the adjacent vertices, $v_j$, must be also adjacent to some $v_i$ for $0 \leq i \leq \delta$.
 
-If $v_j$ is adjacent to $v_0$, then we found a cycle of length $delta + 1$ and have proven the statement.
+If $v_j$ is adjacent to $v_0$, then we found a cycle of length $\delta + 1$ and have proven the statement.
 
 Else, $v_j$ is adjacent to some $v_i$ for $0 \lt i \lt \delta$.
 
 Hence, a different cycle is created by taking the subset of the original path.
 $$v_i, v_{i+1}, \ldots, v_j, v_{j+1}, v_i$$
-This cycle has the length of $delta + 1$.
+This cycle has the length of $\delta + 1$.
 
 $\therefore$ There exists a cycle of length at least $\delta$
 
