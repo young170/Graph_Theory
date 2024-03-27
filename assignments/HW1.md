@@ -1,4 +1,4 @@
-## 9.1.1
+## 9.1.1 (1)
 Let $G = (V, E)$ be a graph, where $|E| = 25$ and the minimum degree of a vertex $v$, $v \in V$, is $4$.
 
 What is the maximum $|V|$, $G$ can have?
@@ -14,6 +14,29 @@ The number of vertices must be an integer.
 $$12 \geq n$$
 
 $\therefore$ The maximum $|V|$, graph $G$ can have is $12$.
+
+## 9.1.1 (2)
+Let $G = (V, E)$ be a simple graph, where $|E| = 50$.
+
+What is the minimum $|V|$, $G$ can have?
+
+### Solution
+For a simple graph to have the minimum number of vectors, $|V|$, each vertex have as much edges as possible. A graph that has this characteristic is the complete graph.
+
+By definition, a complete graph is where for every vertex, there is one and only one edge to all other vertices.
+
+Based on the definition of a complete graph, every vertex of $G$ has the degree of $n - 1$ where $n$ is the number of vertices.
+
+By the degree-sum formula,
+$$2|E| = n(n - 1)$$
+$$|E| = \frac{n(n - 1)}{2}$$
+Substituting our problem gives,
+$$50 = \frac{n(n - 1)}{2}$$
+Solving for $n$,
+$$100 = n(n - 1)$$
+$n$ must be an integer. $\lceil n \rceil$
+
+$\therefore$ The minimum $|V|$, graph $G$ can have is $11$.
 
 ## 9.1.5
 Let a group of $20$ shake hands as a group $71$ times, prove there exists a person who shaked hands at least $8$ times.
@@ -31,13 +54,12 @@ However, our assumption also states there were $71$ handshakes. This contradicts
 
 $\therefore$ There exists a person who shaked at least $8$ times.
 
-## 9.1.9
+## 9.1.9 (1)
 Let $G$ be a graph, where the min-degree is $\delta$.
-1. Prove there exists a path that has a length of at least $\delta$.
-2. Prove there exists a cycle that has a length of at least $\delta + 1$.
+
+Prove there exists a path that has a length of at least $\delta$.
 
 ### Proof
-#### Proof 1
 Using proof by contradiction, assume there is no path of length at least $\delta$ in $G$.
 
 The longest path in $G$ has length less than $\delta$.
@@ -54,7 +76,12 @@ By adding this vertex to the path, we obtain a longer path, contradicting the as
 
 $\therefore$ There exists a path of length at least $\delta$.
 
-#### Proof 2
+## 9.1.9 (2)
+Let $G$ be a graph, where the min-degree is $\delta$.
+
+Prove there exists a cycle that has a length of at least $\delta + 1$.
+
+### Proof
 Using the proof from part 1, let P be the path $v_0, v_1, \ldots, v_\delta$ of length $\delta$.
 
 Let $v_0$ be the vertex that has the min-degree of $\delta$, meaning it has at least $\delta$ adjacent vertices.
