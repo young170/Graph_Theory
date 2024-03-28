@@ -87,14 +87,53 @@ Prove there exists a cycle that has a length of at least $\delta + 1$.
 Using the proof from part 1, let $P$ be the path $v_0, v_1, \ldots, v_\delta$ of length $\delta$.
 
 ## 9.1.14 (1)
-Prove whether the following degree sequence is graphic or not: $5, 5, 4, 4, 3, 2, 2, 1, 1$
+Prove whether the following degree sequence, $D$, is graphic: $5, 5, 4, 4, 3, 2, 2, 1, 1$. If it is draw a simple graph of the graphic.
 
 ### Proof
-Using the Havel-Hakimi theorem, the degree sequence, $d$, can be broken down into a simpler degree sequence.
-$$d = (5, 5, 4, 4, 3, 2, 2, 1, 1), d\prime = ()$$
+By the degree-sum formula, the sum of the degrees should be even ($2|E|$).
+
+$\sum_{d_i \in D} d_i$ is odd, $27$.
+
+$\therefore$ The degree sequence is not graphic, and cannot be drawn as a simple graph.
+
+Also, using the Havel-Hakimi algorithm, the degree sequence, $D$, can be proven to be non-graphic.
+$$D = (5, 5, 4, 4, 3, 2, 2, 1, 1), k = 5, D\prime = (4, 3, 3, 2, 1, 2, 1, 1) = (4, 3, 3, 2, 2, 1, 1, 1)$$
+$$D\prime = (4, 3, 3, 2, 2, 1, 1, 1), k = 4, D\prime\prime = (2, 2, 1, 1, 1, 1, 1)$$
+$$D\prime\prime = (2, 2, 1, 1, 1, 1, 1), k = 2, D\prime\prime\prime = (1, 0, 1, 1, 1, 1)$$
+$$D\prime\prime\prime = (1, 0, 1, 1, 1, 1), k = 1, D\prime\prime\prime\prime = (-1, 1, 1, 1, 1)$$
+As in the algorithm, a negative value in the reduced degree sequence denotes that it is not graphic.
+
+## 9.2.4 (1)
+Solve the **incident matrix** and the **adjacent matrix** for the following graph, $G$:
+![graph-9_2_4](https://github.com/young170/Graph_Theory/blob/main/assets/images/graph-9_2_4.png)
+
+### Incident matrix
+$$
+I(G) = 
+\begin{bmatrix}
+1 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 1 \\
+1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 1 & 1 & 0 & 0 & 0 & 1 & 1 & 0 \\
+0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 1 & 0 & 0 & 1 & 1 \\
+0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0
+\end{bmatrix}
+$$
+
+### Adjacent matrix
+$$
+A(G) = 
+\begin{bmatrix}
+0 & 1 & 1 & 0 & 1 & 1 \\
+1 & 0 & 1 & 0 & 0 & 0 \\
+1 & 1 & 0 & 1 & 1 & 0 \\
+0 & 0 & 1 & 0 & 1 & 0 \\
+1 & 0 & 1 & 1 & 0 & 1 \\
+1 & 0 & 0 & 0 & 1 & 0
+\end{bmatrix}
+$$
 
 ## TODO
-9.2.4 (1)
 9.2.9
 9.3.3
 9.3.8
