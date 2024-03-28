@@ -66,7 +66,7 @@ The longest path in $G$ has length less than $\delta$.
 
 Let $v_0, v_1, \ldots, v_k$ be the longest path in $G$, where $k < \delta$.
 
-Since $v_0$ has degree at least $\delta$, there must be at least $\delta$ distinct vertices adjacent to $v_0$.
+Since $v_0$ has degree at least $\delta$ because either it is the min-degree vertex or not, there must be at least $\delta$ distinct vertices adjacent to $v_0$.
 
 However, since the path $v_0, v_1, \ldots, v_k$ has length less than $\delta$, not all of these adjacent vertices can be included in the path.
 
