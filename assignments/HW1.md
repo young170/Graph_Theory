@@ -82,7 +82,7 @@ Let $G$ be a graph, where the min-degree is $\delta$.
 Prove there exists a cycle that has a length of at least $\delta + 1$.
 
 ### Proof
-Using the proof from part 1, let P be the path $v_0, v_1, \ldots, v_\delta$ of length $\delta$.
+Using the proof from part 1, let $P$ be the path $v_0, v_1, \ldots, v_\delta$ of length $\delta$.
 
 Let $v_0$ be the vertex that has the min-degree of $\delta$, meaning it has at least $\delta$ adjacent vertices.
 
