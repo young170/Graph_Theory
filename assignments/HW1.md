@@ -105,6 +105,7 @@ As in the algorithm, a negative value in the reduced degree sequence denotes tha
 
 ## 9.2.4 (1)
 Solve the **incident matrix** and the **adjacent matrix** for the following graph, $G$:
+
 ![graph-9_2_4](https://github.com/young170/Graph_Theory/blob/main/assets/images/graph-9_2_4.png)
 
 ### Incident matrix
