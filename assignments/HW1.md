@@ -84,20 +84,6 @@ Prove there exists a cycle that has a length of at least $\delta + 1$.
 ### Proof
 Using the proof from part 1, let $P$ be the path $v_0, v_1, \ldots, v_\delta$ of length $\delta$.
 
-Let $v_0$ be the vertex that has the min-degree of $\delta$, meaning it has at least $\delta$ adjacent vertices.
-
-At least one of the adjacent vertices, $v_j$, must be also adjacent to some $v_i$ for $0 \leq i \leq \delta$.
-
-If $v_j$ is adjacent to $v_0$, then we found a cycle of length $\delta + 1$ and have proven the statement.
-
-Else, $v_j$ is adjacent to some $v_i$ for $0 \lt i \lt \delta$.
-
-Hence, a different cycle is created by taking the subset of the original path.
-$$v_i, v_{i+1}, \ldots, v_j, v_{j+1}, v_i$$
-This cycle has the length of $\delta + 1$.
-
-$\therefore$ There exists a cycle of length at least $\delta$
-
 ## 9.1.14 (1)
 Prove whether the following degree sequence is graphic or not: $5, 5, 4, 4, 3, 2, 2, 1, 1$
 
