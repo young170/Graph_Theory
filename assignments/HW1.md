@@ -21,7 +21,7 @@ Let $G = (V, E)$ be a simple graph, where $|E| = 50$.
 What is the minimum $|V|$, $G$ can have?
 
 ### Solution
-For a simple graph to have the minimum number of vectors, $|V|$, each vertex have as much edges as possible. A graph that has this characteristic is the complete graph.
+For a simple graph to have the minimum number of vertices, $|V|$, each vertex have as much edges as possible. A graph that has this characteristic is the complete graph.
 
 By definition, a complete graph is where for every vertex, there is one and only one edge to all other vertices.
 
@@ -68,11 +68,13 @@ Let $v_0, v_1, \ldots, v_k$ be the longest path in $G$, where $k < \delta$.
 
 Since $v_0$ has degree at least $\delta$ because either it is the min-degree vertex or not, there must be at least $\delta$ distinct vertices adjacent to $v_0$.
 
-However, since the path $v_0, v_1, \ldots, v_k$ has length less than $\delta$, not all of these adjacent vertices can be included in the path.
+However, since the path $v_0, v_1, \ldots, v_k$ has length less than $\delta$, not all of these adjacent vertices are included in the path.
 
 Hence, there must be at least one vertex adjacent to $v_0$ that is not in the path.
 
-By adding this vertex to the path, we obtain a longer path, contradicting the assumption that $v_0, v_1, \ldots, v_k$ was the longest path.
+This step is can be repeated until the length of the path is $\delta$ because each vertex has at least $\delta$ adjacent vertices.
+
+By adding these vertices to the path, we obtain a path of at least length $\delta$, contradicting the assumption that the length of the longest path was less than $\delta$.
 
 $\therefore$ There exists a path of length at least $\delta$.
 
