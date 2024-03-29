@@ -106,9 +106,9 @@ As in the algorithm, a negative value in the reduced degree sequence denotes tha
 ## 9.2.4 (1)
 Solve the **incident matrix** and the **adjacent matrix** for the following graph, $G$:
 
-![graph-9_2_4](https://github.com/young170/Graph_Theory/blob/main/assets/images/graph-9_2_4.png)
+<img src="https://github.com/young170/Graph_Theory/blob/main/assets/images/graph-9_2_4.png" alt="prob-graph" width="300"/>
 
-![graph-9_2_4-hand](https://github.com/young170/Graph_Theory/blob/main/assets/images/graph-9_2_4-hand.jpeg)
+<img src="https://github.com/young170/Graph_Theory/blob/main/assets/images/graph-9_2_4-hand.jpeg" alt="hand-graph" width="300"/>
 
 ### Incident matrix
 $$
@@ -136,7 +136,38 @@ A(G) =
 \end{bmatrix}
 $$
 
+## 9.2.9
+Given the adjacency matrix $A(G)$ of a graph, $G = (V, E)$.
+1. Solve for the the minimum and maximum degree of $G$.
+2. Solve for the number of edges of $G$.
+3. Solve for the number of cycles that have the length of $3$ in $G$.
+
+$$
+A(G) = 
+\begin{bmatrix}
+0 & 1 & 1 & 1 & 1 \\
+1 & 0 & 1 & 0 & 0 \\
+1 & 1 & 0 & 1 & 1 \\
+1 & 0 & 1 & 0 & 1 \\
+1 & 0 & 1 & 1 & 0
+\end{bmatrix}
+$$
+
+### 1
+The vertex with the minimum degree is the row|column that has the least entries. This is because each entry counts for an edge starting/ending on that vertex. Hence, counting as a degree.
+
+Inversely, the vertex with the maximum degree is the row|column that has the most entries.
+
+$\therefore$ The minimum degree is $v_2 = 2$ and the maximum degree is $v_1, v_3 = 4$.
+
+### 2
+Each edge is recorded twice in the adjacency matrix.
+
+$\therefore$ The number of edges is $8$.
+
+### 3
+
+
 ## TODO
-9.2.9
 9.3.3
 9.3.8
