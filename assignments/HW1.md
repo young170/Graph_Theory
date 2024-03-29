@@ -108,6 +108,8 @@ Solve the **incident matrix** and the **adjacent matrix** for the following grap
 
 ![graph-9_2_4](https://github.com/young170/Graph_Theory/blob/main/assets/images/graph-9_2_4.png)
 
+![graph-9_2_4-hand](https://github.com/young170/Graph_Theory/blob/main/assets/images/graph-9_2_4-hand.jpeg)
+
 ### Incident matrix
 $$
 I(G) = 
