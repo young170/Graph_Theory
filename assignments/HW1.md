@@ -84,7 +84,21 @@ Let $G$ be a graph, where the min-degree is $\delta$.
 Prove there exists a cycle that has a length of at least $\delta + 1$.
 
 ### Proof
-Using the proof from part 1, let $P$ be the path $v_0, v_1, \ldots, v_\delta$ of length $\delta$.
+Let path $P = (v_0, v_1, ..., v_k)$ be the longest path in $G$.
+
+The degree of $v_k$ is at least $\delat$. This is proven from Section `9.1.9 (1)`.
+
+Let an arbituary $v_i$ be the neighboring vertex to $v_k$ that creates the longest path.
+
+This creates the longest cycle because $v_iv_k \in E$, which a cycle following the path.
+
+The length of this cycle is $k + 1 - i$. $k$ vertices subtracted by $0 ~ i$ and $1$ added because it is a cycle.
+
+Also, it follows that the length of the path from $v_i$ to $v_{k-1}$ is $k - i \ge \delta$. Simply, subtracting $v_k$ and $v_i$ (the looping vertex) gives $k - i$. $k - i$ is greater or equal to $\delta$ because by the definition of $P$, $deg(v_k) \ge \delta$ and $v_i$ is the neighboring vertex that creates the longest path, which is at leat $\delta$.
+
+Adding $1$ to each side of the equation gives, $k + 1 -i \ge \delta$. The left side of the equation is equivalent to the length of the cycle.
+
+$\therefore$ There exists a cycle of length $\ge \delta$ for a graph with a minimum degree of $\delta$.
 
 ## 9.1.14 (1)
 Prove whether the following degree sequence, $D$, is graphic: $5, 5, 4, 4, 3, 2, 2, 1, 1$. If it is draw a simple graph of the graphic.
