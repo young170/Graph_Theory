@@ -218,5 +218,5 @@ Similarly, $\forall w \in W$ can be proved.
 
 $\therefore$ A complete-bipartite graph, $K_{m,n}$ has a Euler cycle **IFF** $m$, $|U|$, and $n$, $|W|$ are even.
 
-## TODO
-9.3.8
+## 9.3.8
+<img src="https://github.com/young170/Graph_Theory/blob/main/assets/images/graph-9_3_8-hamilton.png" alt="prob-graph" width="300"/>
