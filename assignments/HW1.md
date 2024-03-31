@@ -195,6 +195,28 @@ A^3(G) =
 \end{bmatrix}
 $$
 
+## 9.3.3
+Solve for all complete graphs, $K_n$, and complete-bipartite graphs, $K_{m,n}$, that contain a Euler cycle.
+
+### Solution - Complete Graphs
+Using the theorem on the existence of Euler cycles, this problem can be solved.
+
+The theorem states, the necessary and sufficient condition for a connected graph, $G$, to have a Euler cycle is when all vertices of $G$ have an even degree.
+
+For all the vertices in a complete graph to have an even degree, the total number of vertices, $|V|$, must be an odd number.
+
+By the definition of a complete graph, all vertices are connected to $n - 1$ distinct vertices, when $n = |V|$.
+
+$\therefore$ All complete graphs, $K_n$, with $n \ge 3$, contain a Euler cycle **IFF** $n$ is an odd number.
+
+### Solution - Complete-Bipartite Graphs
+By the definition of complete-bipartite graphs, the set of vertices, $V$, of a complete-bipartite graph, $G$, can be divided into two disjoint sets, $U$ and $W$.
+
+Also, by definition, $\forall u \in U$, $u_i$ has an even degree **IFF** $|W|$ is even.
+
+Similarly, $\forall w \in W$ can be proved.
+
+$\therefore$ A complete-bipartite graph, $K_{m,n}$ has a Euler cycle **IFF** $m$, $|U|$, and $n$, $|W|$ are even.
+
 ## TODO
-9.3.3
 9.3.8
