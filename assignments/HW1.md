@@ -86,7 +86,7 @@ Prove there exists a cycle that has a length of at least $\delta + 1$.
 ### Proof
 Let path $P = (v_0, v_1, ..., v_k)$ be the longest path in $G$.
 
-The degree of $v_k$ is at least $\delat$. This is proven from Section `9.1.9 (1)`.
+The degree of $v_k$ is at least $\delta$. This is proven from Section `9.1.9 (1)`.
 
 Let an arbituary $v_i$ be the neighboring vertex to $v_k$ that creates the longest path.
 
@@ -180,7 +180,20 @@ Each edge is recorded twice in the adjacency matrix.
 $\therefore$ The number of edges is $8$.
 
 ### 3
+By theorem 9.2.2 (2), for an arbituary natural number $m$, $A^m_{i,j}$ represents the number of paths of length $m$ from vertex $v_i$ to vertex $v_j$.
 
+To find the number of cycles of length $3$ in graph $G$, let $A^3_{i,j}$ be the adjacency matrix $A(G)$ raised to the power of $m$, $3$.
+
+$$
+A^3(G) = 
+\begin{bmatrix}
+8 & 7 & 9 & 9 & 9 \\
+7 & 2 & 7 & 4 & 4 \\
+9 & 7 & 8 & 9 & 9 \\
+9 & 4 & 9 & 6 & 7 \\
+9 & 4 & 9 & 7 & 6
+\end{bmatrix}
+$$
 
 ## TODO
 9.3.3
