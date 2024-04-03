@@ -220,3 +220,19 @@ $\therefore$ A complete-bipartite graph, $K_{m,n}$ has a Euler cycle **IFF** $m$
 
 ## 9.3.8
 <img src="https://github.com/young170/Graph_Theory/blob/main/assets/images/graph-9_3_8-hamilton.png" alt="prob-graph" width="300"/>
+
+By definition, the Petersen graph has no cycle of length $\le 4$. Also, the Petersen graph has $10$ vertices and $15$ edges.
+
+Using proof by contradiction, suppose the Petersen graph contained a Hamiton cycle.
+
+Then the cycle, $C$, must be a $10$-cycle to contain all vertices of the Petersen graph.
+
+The rest of the edges, $5$ edges, must be connected to vertices not already adjacent to $C$.
+
+The maximum distance an edge can be is $5$. However, adding an edge $5$ limits the other edges.
+
+Following edges cannot be connected without making a cycle of length $\le 4$. This is because the distance between vertices reduces in half when a maximal-edge is added to the $10$-cycle.
+
+Which contradicts our assumption.
+
+$\therefore$ The Petersen graph does not contain a Hamilton cycle.
